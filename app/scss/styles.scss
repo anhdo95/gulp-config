@@ -1,0 +1,27 @@
+@import './_mixins.scss';
+
+.testing {
+  min-width: 200px;
+  width: percentage(2/7);
+
+  min-height: 400px;
+  height: percentage(2/12);
+
+  background-color: red;
+  color: #e8e8e8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  word-spacing: 0.25rem;
+  font-size: 1.1rem;
+
+  @include user-select(none);
+  @include opacity(.9);
+  @include border-radius(10px);
+
+  p {
+    width: 180px;
+  }
+}

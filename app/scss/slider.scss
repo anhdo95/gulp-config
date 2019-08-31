@@ -1,0 +1,11 @@
+@import './_mixins.scss';
+
+.slide {
+  @include border-radius(20px);
+  @include text-overflow;
+  @include opacity(0.5);
+  background-color: red;
+  color: #fff;
+  padding: 2rem;
+  margin-top: 1rem;
+}

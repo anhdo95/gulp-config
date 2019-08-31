@@ -1,0 +1,14 @@
+.slide {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  background-color: red;
+  color: #fff;
+  padding: 2rem;
+  margin-top: 1rem; }

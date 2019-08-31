@@ -1,0 +1,24 @@
+.testing {
+  min-width: 200px;
+  width: 28.57143%;
+  min-height: 400px;
+  height: 16.66667%;
+  background-color: red;
+  color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-spacing: 0.25rem;
+  font-size: 1.1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+  .testing p {
+    width: 180px; }
