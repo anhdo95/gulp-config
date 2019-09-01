@@ -1,7 +1,6 @@
 var { src, dest } = require('gulp'),
     sass = require('gulp-sass'),
-    prefix = require('gulp-autoprefixer'),
-    rename = require('gulp-rename')
+    prefix = require('gulp-autoprefixer')
 
 var browserSync = require('./browser-sync')
 
@@ -19,6 +18,4 @@ module.exports = function stylesTask() {
     .pipe(prefix())
     .pipe(dest('app/css'))
     .pipe(browserSync.stream())
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(dest('dist/styles'))
 }

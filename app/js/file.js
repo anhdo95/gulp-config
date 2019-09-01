@@ -1,5 +1,5 @@
-exports.default = {
-  getBase64: function(img) {
+class File {
+  static getBase64 = (img) => {
     return new Promise(function (resolve) {
       var reader = new FileReader()
       reader.addEventListener('load', function() {
@@ -7,9 +7,11 @@ exports.default = {
       })
       reader.readAsDataURL(img)
     })
-  },
+  }
 
-  bytesToMb: function(bytes) {
+  static bytesToMb = (bytes) => {
     return bytes / 1024 / 1024
   }
 }
+
+export default File

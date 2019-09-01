@@ -1,6 +1,7 @@
 var { watch } = require('gulp')
 
 var stylesTask = require('./styles'),
+    scriptsTask = require('./scripts'),
     browserSync = require('./browser-sync')
 
 function startServer() {
@@ -24,10 +25,18 @@ function watchTask() {
       events: 'change',
       queue: false,
     },
-    stylesTask)
+    stylesTask
+  )
 
   watch('app/*.html').on('change', browserSync.reload)
-  watch('app/js/**/*.js').on('change', browserSync.reload)
+  watch(
+    [
+      'app/js/**/*.js',
+      '!app/js/**/*.min.js'
+    ],
+    scriptsTask
+  )
+  .on('change', browserSync.reload)
 }
 
 module.exports = watchTask

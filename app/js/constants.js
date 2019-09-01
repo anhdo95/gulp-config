@@ -1,4 +1,4 @@
-exports.default = {
+export default {
   AUTH: {
     ACCESS_TOKEN: 'access_token',
     SESSION_TOKEN: 'session_token',
