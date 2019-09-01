@@ -1,7 +1,4 @@
 .slide {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
   border-radius: 20px;
   white-space: nowrap;
   overflow: hidden;

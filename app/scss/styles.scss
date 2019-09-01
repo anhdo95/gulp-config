@@ -8,7 +8,9 @@
   height: percentage(2/12);
 
   background-color: red;
-  color: #e8e8e8;
+  color: black;
+
+  // font-size: 40px!important;
 
   display: flex;
   justify-content: center;
@@ -18,7 +20,6 @@
   font-size: 1.1rem;
 
   @include user-select(none);
-  @include opacity(.9);
   @include border-radius(10px);
 
   p {
