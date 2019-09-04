@@ -1,5 +1,5 @@
 {
-  "name": "my-project",
+  "name": "gulp4",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -34,7 +34,11 @@
   },
   "dependencies": {},
   "babel": {
-    "presets": [ "@babel/preset-env"],
-    "plugins": ["@babel/plugin-proposal-class-properties"]
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   }
 }
