@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgba(64, 77, 255, 0.8);
+}
+
+.traffic-light {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 10em;
+    height: 19.5em;
+
+    border: 0.5em solid #eee;
+    border-radius: 1em;
+    background-color: #333;
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+
+    width: 4em;
+    height: 10em;
+
+    background-color: #eee;
+  }
+
+  &__circle {
+    width: 5em;
+    height: 5.5em;
+    transform: translateX(calc(50% - 0.5em));
+    margin: 0.5em 0;
+
+    border-top: 0.5em solid #000;
+    border-radius: 50%;
+    background-color: #000;
+
+    &--red {
+      animation: red-light 12s ease-in infinite;
+    }
+    &--yellow {
+      animation: yellow-light 12s ease-in infinite;
+    }
+    &--green {
+      animation: green-light 12s ease-in infinite;
+    }
+  }
+}
+
+@keyframes red-light {
+  0% { background-color: #000; }
+  2%, 40% { background-color: red; }
+  42%, 100% { background-color: #000; }
+}
+
+@keyframes yellow-light {
+  0%, 30% { background-color: #000; }
+  31%, 40% { background-color: yellow; }
+  42%, 90% { background-color: #000; }
+  91%, 100% { background-color: yellow; }
+}
+
+@keyframes green-light {
+  0%, 40% { background-color: #000; }
+  42%, 90% { background-color: green; }
+  91%, 100% { background-color: #000; }
+}
